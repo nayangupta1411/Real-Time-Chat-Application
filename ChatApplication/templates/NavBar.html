@@ -1,0 +1,40 @@
+
+<div class="container-fluid">
+    <nav class=" navbar fixed-top navbar-expand-sm admin_nav row" >
+        <div class="col-lg-7 pl-5 admin_nav_heading">
+            <div class="navbar-brand"><i class="fas fa-headset"></i> QuickChat</div>
+    
+        </div>
+        <div class="col-lg-5  ">
+            <button class="navbar-toggler navbar-dark " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     
+                <div class="my-2 my-lg-0">
+                  <ul class="navbar-nav ">
+                      <li class="nav-item">
+                        <a class="nav-link admin_nav_link {% if active_section=='active_users' %} active {% endif %}"  type="button" href="{{ url_for('active_users',access_email=access_email,access_email_name=access_email_name) }}" >Active Users</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link admin_nav_link {% if active_section=='create_join_group' %} active {% endif %}" type="button" href="{{ url_for('create_join_group',access_email=access_email,access_email_name=access_email_name) }}" >Create/Join Room</a>
+                      </li>
+                      
+                      <li class="nav-item">
+                        <a class="nav-link admin_nav_link {% if active_section=='created_groups' %} active {% endif %}" type="button" href="{{ url_for('created_groups',access_email=access_email,access_email_name=access_email_name) }}" >
+                          Groups
+                        </a>
+                      </li>
+                      
+                      <li class="nav-item">
+                        <a class="nav-link admin_nav_link"  type="button" href="{{ url_for('logout',access_email=access_email) }}">
+                          SignOut
+                        </a>
+                      </li>
+                    </ul>
+                 
+                </div>
+              </div>
+        </div> 
+    </nav>
+    </div>

@@ -1,0 +1,238 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+body{
+    background-color: rgb(255, 251, 251);
+}
+
+.head{
+    text-align: center;
+    background-color: #242226;
+    text-shadow: 1px 1px 1px #659287;
+    font-size:25px;
+    font-weight: 500;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px gray;
+    color:white;
+    /* width: 100%; */
+}
+
+
+.formCss{
+    text-align: center;
+    box-sizing: border-box;
+    border: 2px;
+    border-color: #659287;
+    border-style:hidden;
+    border-radius: 5px;
+    box-shadow: 3px 5px 7px gray;
+    background-color: #C2BAC5;
+    margin: auto;
+}
+
+.formfield{
+    text-align: left;
+}
+
+.formHead{
+    color:white;
+    text-shadow: 2px 2px 1px #659287;
+}
+
+.col-form-label{
+    color: #054d3b ;
+}
+
+.account{
+
+    color: #69636C;
+}
+
+
+
+.admin_nav{
+    background-color: #464349;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px gray;
+    color:white;
+}
+
+.admin_nav_heading{
+    color:white;
+    text-shadow: 1px 1px 1px #659287;
+    font-weight: 500;
+
+}
+
+.admin_nav_link{
+    color: white;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px #659287;
+}
+
+.admin_nav_link:hover{
+    color: #FCFAFC;
+    text-shadow: 1px 1px 1px #242226;
+
+
+}
+
+.card{
+    background-color: #242226;
+    display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Use flex/grid parent container for width */
+  max-width: 300px; /* Define max width for cards */
+  height: auto; /* Allow dynamic height based on content */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card-body{
+    text-align: center;
+    color: white;
+    padding: 16px;
+
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto; /* Auto resize images based on container */
+    object-fit: cover; /* Ensure images fit neatly */
+  }
+
+
+.chatForm{
+    text-align: center;
+}
+
+#chat_box{
+    box-sizing: border-box;
+    height:auto;
+    overflow-y: auto;
+    position: relative;
+    padding-top: 20%;   
+
+}
+
+.senderUI{
+    box-sizing: border-box;
+    background-color: #69636C;
+    text-align: right;
+    color:white;
+    
+    border-radius: 1px 15px;
+    display:inline-flex;
+    
+}
+
+.senderName{
+    font-size: 12px;
+    
+}
+
+.senderTime{
+    text-align: left;
+    padding-left: 5px;
+    font-size: 7px;
+}
+
+.receiverUI{
+    box-sizing: border-box;
+    background-color: #C2BAC5;
+    text-align: left;
+    color:#242226;
+    width: auto;
+    border-radius: 15px 1px;
+    display: inline-block;
+    position: relative;
+}
+
+.receiverName{
+    text-align: left;
+    font-size: 12px;
+    padding-top: 10px;
+
+}
+
+.receiverTime{
+    
+    font-size: 7px;
+}
+
+.realtime_senderUI{
+   
+    box-sizing: border-box;
+    background-color:  #69636C;
+    text-align: left;
+    color:white;
+    width: auto;
+    border-radius: 1px 15px;
+    display: inline-block;
+    position: relative;
+
+}
+
+.realtime_senderTime{
+    font-size: 7px;
+    padding-left: 5px;
+    text-align: left;
+}
+
+.realtime_receiverUI{
+    box-sizing: border-box;
+    background-color: #C2BAC5;
+    text-align: right;
+    color:#242226;
+    width: auto;
+    border-radius: 15px 1px;
+    display: inline-block;
+    position: relative;
+
+}
+
+.realtime_receiverTime{
+    position: relative;
+    font-size: 7px;
+    text-align: justify;
+}
+
+.formCssGroup{
+    text-align: center;
+    box-sizing: border-box;
+    border: 2px;
+   
+    border-style:hidden;
+    border-radius: 5px;
+    box-shadow: 3px 5px 7px gray;
+   color:white;
+    margin: auto;
+}
+
+.groupLable{
+    color: white;
+}
+
+.list-group-item{
+    background-color: #69636C;
+    box-sizing: border-box;
+    border-radius: 15px 15px;
+    box-shadow: 2px 2px 2px gray;
+    color:white
+}
+
+code{
+    color: white;
+}
+
+.groupNameCSS{
+    text-shadow: 1px 1px 3px white;
+}

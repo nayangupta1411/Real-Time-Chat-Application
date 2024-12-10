@@ -1,0 +1,34 @@
+
+<div class="pt-5"></div>
+<div class="pt-5 pl-5 container-fluid">
+<h4>Hi, {{ access_email_name }}</h4>
+</div>
+<div class="container-fluid col-lg-8 pt-3">
+    
+{%if active_user %}
+<div class="row">
+    {% for i in active_user %}
+    <div class="col-lg-3 col-sm-4 col-md-4 pb-2 ">
+        <div class="card" style="width: auto; height: auto">
+            {% if i.get('inputGender')=='male' %}
+            <img class="card-img-top" src="{{ url_for('static', filename = 'img/Male.jpg') }}" alt="Card image cap"  >
+            {% elif i.get('inputGender')=='female' %}
+            <img class="card-img-top" src="{{ url_for('static', filename = 'img/Female.jpg') }}" alt="Card image cap"  >
+            {% endif %}
+            <div class="card-body">
+                {% if i.get('inputName')== access_email_name %}
+                <h5 class="card-title">( You )</h5>
+                {% else %}
+                <h5 class="card-title">{{ i.get('inputName') }}</h5>
+                {% endif %}
+
+                <a href="{{ url_for('single_chat_page',sender_email=access_email,
+                access_email_name=access_email_name,receiver_email=i.get('inputEmail'),receiver_name= i.get('inputName')) }}" 
+                class="btn btn-light">Chat</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
+</div>

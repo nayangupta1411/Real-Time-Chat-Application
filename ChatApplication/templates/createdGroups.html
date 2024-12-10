@@ -1,0 +1,37 @@
+<div class="pt-5"></div>
+<div class="pt-5"></div>
+
+
+<div class="container-fluid col-lg-8 ">
+    <div class="modal-body ">
+        {% if groups %}
+        <ul class="list-group">
+            {% for group in groups %}
+            <li class="list-group-item m-1 ">
+               <div class="container-fluid">
+                 <div class="row">
+                   <div class="col-lg-6">
+                    <div class="inputGroupName groupNameCSS"><h4>{{ group.inputGroupName }}</h4></div>
+                    <code>Group Owner:</code> <span class="groupOwnerName">{{ group.groupOwnerName }}</span>
+                   </div>
+                   <div class="col-lg-3">
+                    <div class="pt-3 ">
+                    {{ group.inputAccessKey }}</div>
+                   </div>
+                   <div class="col-lg-3">
+                    <a type="button" class="mt-2 btn btn-light" href="{{ url_for('group_chat_page',sender_email=access_email,access_email_name=access_email_name,groupName=group.inputGroupName,groupAccessKey=group.inputAccessKey) }}">Group Chat</a>
+                   </div>
+                 </div> 
+                </div>
+            </li>
+           
+            {% endfor %}
+        </ul>
+
+        {% else %}
+        <p>No Groups</p>
+        {% endif %}
+    </div>
+ 
+</div>
+
